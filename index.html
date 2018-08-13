@@ -1,11 +1,2024 @@
-<!DOCTYPE html><html lang="en"><head><title>skmmr | a light-weight international news feed, perfect for skimming</title><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content="skmmr brings together top headlines from around the world into an easy to skim feed. Choose to read news headlines from over 100 global news sources and blogs, including The New York Times and BBC News."/><meta property="og:title" content="skmmr | a light-weight international news feed, perfect for skimming"/><meta property="og:type" content="website"/><meta property="og:url" content="http://skmmr.news"/><meta property="og:image" content="http://skmmr.news/assets/img/skmmr-placeholder-80.jpg"/><link rel="apple-touch-icon" sizes="57x57" href="/assets/img/apple-icon-57x57.png"/><link rel="apple-touch-icon" sizes="60x60" href="/assets/img/apple-icon-60x60.png"/><link rel="apple-touch-icon" sizes="72x72" href="/assets/img/apple-icon-72x72.png"/><link rel="apple-touch-icon" sizes="76x76" href="/assets/img/apple-icon-76x76.png"/><link rel="apple-touch-icon" sizes="114x114" href="/assets/img/apple-icon-114x114.png"/><link rel="apple-touch-icon" sizes="120x120" href="/assets/img/apple-icon-120x120.png"/><link rel="apple-touch-icon" sizes="144x144" href="/assets/img/apple-icon-144x144.png"/><link rel="apple-touch-icon" sizes="152x152" href="/assets/img/apple-icon-152x152.png"/><link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-icon-180x180.png"/><link rel="icon" type="image/png" sizes="192x192" href="/assets/img/android-icon-192x192.png"/><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon-96x96.png"/><link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png"/><link rel="manifest" href="/assets/img/manifest.json"/><meta name="msapplication-TileColor" content="#ffffff"/><meta name="msapplication-TileImage" content="/assets/img/ms-icon-144x144.png"/><meta name="theme-color" content="#ffffff"/><!-- Load font icons--><!-- Material Design Iconic Font - (http://zavoloklom.github.io/material-design-iconic-font/index.html)--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"/><!-- Load Google Fonts--><link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700" rel="stylesheet"/><!-- Load the main stylesheet--><link rel="stylesheet" href="assets/css/main.css"/></head><body><!-- Masthead--><div class="masthead fixed"><div class="branding"><div class="site-title"><a href="#top"><p class="logo">s</p></a><h1>Skmmr</h1></div><h2 class="site-tagline">A skimmable news feed</h2></div><div class="navigation"><ul><li><a class="source-menu-trigger"><i class="zmdi zmdi-view-list-alt"></i></a></li><li><a class="refresh-page" href="/"><i class="zmdi zmdi-refresh-alt"></i></a></li></ul></div></div><nav class="source-menu"><p class="source-menu-close"><i class="zmdi zmdi-close"></i></p><div class="source-theme"><p>Dark theme</p><div class="toggle"><div class="toggle-circle"></div></div></div><div class="source-lang"><p>English only</p><div class="toggle"><div class="toggle-circle"></div></div></div><ul class="accordion-menu"><li class="accordion-label accordion-country"><a class="accordion-source-menu-trigger" href="#" data-source="country"><p>Countries</p><p class="accordion-source-menu-arrow"><i class="zmdi zmdi-chevron-right"></i></p></a><nav class="feed-menu country-menu hide"><p class="menu-intro">View the top headlines from each these countries</p><ul class="flag-grid"><li><img class="flag-image" src="assets/img/flags/ar.svg" data-country="ar" data-name="Argentina"/></li><li><img class="flag-image" src="assets/img/flags/au.svg" data-country="au" data-name="Australia"/></li><li><img class="flag-image" src="assets/img/flags/at.svg" data-country="at" data-name="Österreich"/></li><li><img class="flag-image" src="assets/img/flags/be.svg" data-country="be" data-name="België"/></li><li><img class="flag-image" src="assets/img/flags/br.svg" data-country="br" data-name="Brasil"/></li><li><img class="flag-image" src="assets/img/flags/bg.svg" data-country="bg" data-name="България"/></li><li><img class="flag-image" src="assets/img/flags/ca.svg" data-country="ca" data-name="Canada"/></li><li><img class="flag-image" src="assets/img/flags/cn.svg" data-country="cn" data-name="中国"/></li><li><img class="flag-image" src="assets/img/flags/co.svg" data-country="co" data-name="Colombia"/></li><li><img class="flag-image" src="assets/img/flags/cu.svg" data-country="cu" data-name="Cuba"/></li><li><img class="flag-image" src="assets/img/flags/cz.svg" data-country="cz" data-name="Česká republika"/></li><li><img class="flag-image" src="assets/img/flags/eg.svg" data-country="eg" data-name="مصر" data-direction="reverse"/></li><li><img class="flag-image" src="assets/img/flags/fr.svg" data-country="fr" data-name="France"/></li><li><img class="flag-image" src="assets/img/flags/de.svg" data-country="de" data-name="Deutschland"/></li><li><img class="flag-image" src="assets/img/flags/gr.svg" data-country="gr" data-name="Ελλάδα"/></li><li><img class="flag-image" src="assets/img/flags/hk.svg" data-country="hk" data-name="香港"/></li><li><img class="flag-image" src="assets/img/flags/hu.svg" data-country="hu" data-name="Magyarország"/></li><li><img class="flag-image" src="assets/img/flags/in.svg" data-country="in" data-name="India"/></li><li><img class="flag-image" src="assets/img/flags/id.svg" data-country="id" data-name="Indonesia"/></li><li><img class="flag-image" src="assets/img/flags/ie.svg" data-country="ie" data-name="Ireland"/></li><li><img class="flag-image" src="assets/img/flags/il.svg" data-country="il" data-name="ישרא" data-direction="reverse"/></li><li><img class="flag-image" src="assets/img/flags/it.svg" data-country="it" data-name="Italia"/></li><li><img class="flag-image" src="assets/img/flags/jp.svg" data-country="jp" data-name="日本"/></li><li><img class="flag-image" src="assets/img/flags/lv.svg" data-country="lv" data-name="Latvija"/></li><li><img class="flag-image" src="assets/img/flags/lt.svg" data-country="lt" data-name="Lietuva"/></li><li><img class="flag-image" src="assets/img/flags/my.svg" data-country="my" data-name="Malaysia"/></li><li><img class="flag-image" src="assets/img/flags/mx.svg" data-country="mx" data-name="Méjico"/></li><li><img class="flag-image" src="assets/img/flags/ma.svg" data-country="ma" data-name="Morocco"/></li><li><img class="flag-image" src="assets/img/flags/nl.svg" data-country="nl" data-name="Nederland"/></li><li><img class="flag-image" src="assets/img/flags/nz.svg" data-country="nz" data-name="New Zealand"/></li><li><img class="flag-image" src="assets/img/flags/ng.svg" data-country="ng" data-name="Nigeria"/></li><li><img class="flag-image" src="assets/img/flags/no.svg" data-country="no" data-name="Norge"/></li><li><img class="flag-image" src="assets/img/flags/ph.svg" data-country="ph" data-name="Phillippines"/></li><li><img class="flag-image" src="assets/img/flags/pl.svg" data-country="pl" data-name="Polska"/></li><li><img class="flag-image" src="assets/img/flags/pt.svg" data-country="pt" data-name="Portugal"/></li><li><img class="flag-image" src="assets/img/flags/ro.svg" data-country="ro" data-name="România"/></li><li><img class="flag-image" src="assets/img/flags/ru.svg" data-country="ru" data-name="Россия"/></li><li><img class="flag-image" src="assets/img/flags/sa.svg" data-country="sa" data-name="المملكة العربية السعودية" data-direction="reverse"/></li><li><img class="flag-image" src="assets/img/flags/rs.svg" data-country="rs" data-name="Србија"/></li><li><img class="flag-image" src="assets/img/flags/sg.svg" data-country="sg" data-name="Singapore"/></li><li><img class="flag-image" src="assets/img/flags/sk.svg" data-country="sk" data-name="Slovensko"/></li><li><img class="flag-image" src="assets/img/flags/si.svg" data-country="si" data-name="Slovenija"/></li><li><img class="flag-image" src="assets/img/flags/za.svg" data-country="za" data-name="South Africa"/></li><li><img class="flag-image" src="assets/img/flags/kr.svg" data-country="kr" data-name="대한민국"/></li><li><img class="flag-image" src="assets/img/flags/se.svg" data-country="se" data-name="Sverige"/></li><li><img class="flag-image" src="assets/img/flags/ch.svg" data-country="ch" data-name="Schweiz"/></li><li><img class="flag-image" src="assets/img/flags/tw.svg" data-country="tw" data-name="台湾"/></li><li><img class="flag-image" src="assets/img/flags/th.svg" data-country="th" data-name="ประเทศไทย"/></li><li><img class="flag-image" src="assets/img/flags/tr.svg" data-country="tr" data-name="Türkiye"/></li><li><img class="flag-image" src="assets/img/flags/ae.svg" data-country="ae" data-name="الإمارات العربية المتحدة" data-direction="reverse"/></li><li><img class="flag-image" src="assets/img/flags/ua.svg" data-country="ua" data-name="Україна"/></li><li><img class="flag-image" src="assets/img/flags/gb.svg" data-country="gb" data-name="United Kingdom"/></li><li><img class="flag-image" src="assets/img/flags/us.svg" data-country="us" data-name="United States"/></li><li><img class="flag-image" src="assets/img/flags/ve.svg" data-country="ve" data-name="Venezuela"/></li></ul></nav></li><li class="accordion-label accordion-source"><a class="accordion-source-menu-trigger" href="#" data-source="sources"><p>Sources</p><p class="accordion-source-menu-arrow"><i class="zmdi zmdi-chevron-right"></i></p></a><nav class="feed-menu sources-menu"><ul><p class="menu-intro">Get the top stories or latest news from these trusted news sources</p><li class="source-link lang-en" data-source="abc-news">ABC News</li><li class="source-link lang-en" data-source="abc-news-au">ABC News (AU)</li><li class="source-link" data-source="aftenposten">Aftenposten</li><li class="source-link lang-en" data-source="al-jezeera-english">Al-Jezeera English</li><li class="source-link" data-source="ansa">ANSA.it</li><li class="source-link" data-source="argaam">Argaam</li><li class="source-link lang-en" data-source="ars-technica">Ars Technica</li><li class="source-link" data-source="ary-news">Ary News</li><li class="source-link lang-en" data-source="associated-press">Associated Press</li><li class="source-link lang-en" data-source="australian-financial-review">Australian Financial Review</li><li class="source-link lang-en" data-source="axios">Axios</li><li class="source-link lang-en" data-source="bbc-news">BBC News</li><li class="source-link lang-en" data-source="bbc-sport">BBC Sport</li><li class="source-link" data-source="bild">Bild</li><li class="source-link" data-source="blasting-news-br">Blasting News (BR)</li><li class="source-link lang-en" data-source="bleacher-report">Bleacher Report</li><li class="source-link lang-en" data-source="bloomberg">Bloomberg</li><li class="source-link lang-en" data-source="breitbart-news">Breitbart News</li><li class="source-link lang-en" data-source="business-insider">Business Insider</li><li class="source-link lang-en" data-source="business-insider-uk">Business Insider (UK)</li><li class="source-link lang-en" data-source="buzzfeed">Buzzfeed</li><li class="source-link lang-en" data-source="cbc-news">CBC News</li><li class="source-link lang-en" data-source="cbs-news">CBS News</li><li class="source-link lang-en" data-source="cnbc">CNBC</li><li class="source-link lang-en" data-source="cnn">CNN</li><li class="source-link" data-source="cnn-es">CNN Spanish</li><li class="source-link lang-en" data-source="crypto-coins-news">Crypto Coins News</li><li class="source-link lang-en" data-source="daily-mail">Daily Mail</li><li class="source-link" data-source="der-tagesspiegel">Der Tagesspiegel</li><li class="source-link" data-source="die-zeit">Die Zeit</li><li class="source-link" data-source="el-mundo">El Mundo</li><li class="source-link lang-en" data-source="engadget">Engadget</li><li class="source-link lang-en" data-source="entertainment-weekly">Entertainment Weekly</li><li class="source-link lang-en" data-source="espn">ESPN</li><li class="source-link lang-en" data-source="espn-cric-info">ESPN Cric Info</li><li class="source-link lang-en" data-source="financial-post">Financial Post</li><li class="source-link lang-en" data-source="financial-times">Financial Times</li><li class="source-link" data-source="focus">Focus</li><li class="source-link lang-en" data-source="football-italia">Football Italia</li><li class="source-link lang-en" data-source="fortune">Fortune</li><li class="source-link lang-en" data-source="four-four-two">FourFourTwo</li><li class="source-link lang-en" data-source="fox-news">Fox News</li><li class="source-link lang-en" data-source="fox-sports">Fox Sports</li><li class="source-link" data-source="globo">Globo</li><li class="source-link lang-en" data-source="google-news">Google News</li><li class="source-link" data-source="google-news-ar">Google News (Argentina)</li><li class="source-link lang-en" data-source="google-news-au">Google News (Australia)</li><li class="source-link" data-source="google-news-br">Google News (Brasil)</li><li class="source-link lang-en" data-source="google-news-ca">Google News (Canada)</li><li class="source-link" data-source="google-news-fr">Google News (France)</li><li class="source-link lang-en" data-source="google-news-in">Google News (India)</li><li class="source-link" data-source="google-news-is">Google News (Israel)</li><li class="source-link" data-source="google-news-it">Google News (Italy)</li><li class="source-link" data-source="google-news-ru">Google News (Russia)</li><li class="source-link" data-source="google-news-sa">Google News (Saudi Arabia)</li><li class="source-link lang-en" data-source="google-news-uk">Google News (UK)</li><li class="source-link" data-source="goteborgs-posten">G&ouml;	teborgs Posten</li><li class="source-link" data-source="gruenderszene">Gruenderszene</li><li class="source-link lang-en" data-source="hacker-news">Hacker News</li><li class="source-link" data-source="handelsblatt">Handelsblatt</li><li class="source-link lang-en" data-source="ign">IGN</li><li class="source-link" data-source="il-sole-24-ore">Il Sole 24 Ore</li><li class="source-link lang-en" data-source="independent">Independent</li><li class="source-link" data-source="infobae">Infobae</li><li class="source-link" data-source="info-money">Info Money</li><li class="source-link" data-source="la-gaceta">La Gaceta</li><li class="source-link" data-source="la-nacion">La Nacion</li><li class="source-link" data-source="la-repubblica">La Repubblica</li><li class="source-link" data-source="le-monde">Le Monde</li><li class="source-link" data-source="lenta">Lenta</li><li class="source-link" data-source="lequipe">L'equipe</li><li class="source-link" data-source="les-ochos">Les Ochos</li><li class="source-link" data-source="liberation">Lib&eacute;ration</li><li class="source-link" data-source="marca">Marca</li><li class="source-link lang-en" data-source="mashable">Mashable</li><li class="source-link lang-en" data-source="medical-news-today">Medical News Today</li><li class="source-link lang-en" data-source="metro">Metro</li><li class="source-link lang-en" data-source="mirror">Mirror</li><li class="source-link lang-en" data-source="msnbc">MSNBC</li><li class="source-link lang-en" data-source="mtv-news">MTV News</li><li class="source-link lang-en" data-source="mtv-news-uk">MTV News (UK)</li><li class="source-link lang-en" data-source="national-geographic">National Geographic</li><li class="source-link lang-en" data-source="nbc-news">NBC News</li><li class="source-link lang-en" data-source="news-24">News 24</li><li class="source-link lang-en" data-source="new-scientist">New Scientist</li><li class="source-link lang-en" data-source="news-com-au">News.com.au</li><li class="source-link lang-en" data-source="newsweek">Newsweek</li><li class="source-link lang-en" data-source="new-york-magazine">New York Magazine</li><li class="source-link lang-en" data-source="next-big-future">Next Big Future</li><li class="source-link lang-en" data-source="nfl-news">NFL News</li><li class="source-link lang-en" data-source="nhl-news">NHL News</li><li class="source-link" data-source="nrk">NRK</li><li class="source-link lang-en" data-source="politico">Politico</li><li class="source-link lang-en" data-source="polygon">Polygon</li><li class="source-link" data-source="rbc">RBC</li><li class="source-link lang-en" data-source="recode">Recode</li><li class="source-link lang-en" data-source="reddit-r-all">Reddit/r/all</li><li class="source-link lang-en" data-source="reuters">Reuters</li><li class="source-link" data-source="rt">RT</li><li class="source-link lang-en" data-source="rte">RTE</li><li class="source-link" data-source="rtl-nieuws">RTL Nieuws</li><li class="source-link" data-source="sabq">SABQ</li><li class="source-link" data-source="spiegel-online">Spiegel Online</li><li class="source-link" data-source="svenska-dagbladet">Svenska Dagbladet</li><li class="source-link" data-source="t3n">T3n</li><li class="source-link lang-en" data-source="talksport">TalkSport</li><li class="source-link lang-en" data-source="techcrunch">TechCrunch</li><li class="source-link" data-source="techcrunch-cn">TechCrunch (CN)</li><li class="source-link" data-source="techradar">TechRadar</li><li class="source-link lang-en" data-source="the-economist">The Economist</li><li class="source-link lang-en" data-source="the-globe-and-mail">The Globe and Mail</li><li class="source-link lang-en" data-source="the-guardian-au">The Guardian (AU)</li><li class="source-link lang-en" data-source="the-guardian-uk">The Guardian (UK)</li><li class="source-link lang-en" data-source="the-hill">The Hill</li><li class="source-link lang-en" data-source="the-hindu">The Hindu</li><li class="source-link lang-en" data-source="the-huffington-post">The Huffington Post</li><li class="source-link lang-en" data-source="the-irish-times">The Irish Times</li><li class="source-link lang-en" data-source="the-lad-bible">The Lad Bible</li><li class="source-link lang-en" data-source="the-new-york-times">The New York Times</li><li class="source-link lang-en" data-source="the-next-web">The Next Web</li><li class="source-link lang-en" data-source="the-sport-bible">The Sport Bible</li><li class="source-link lang-en" data-source="the-telegraph">The Telegraph</li><li class="source-link lang-en" data-source="the-times-of-india">The Times of India</li><li class="source-link lang-en" data-source="the-verge">The Verge</li><li class="source-link lang-en" data-source="the-wall-street-journal">The Wall Street Journal</li><li class="source-link lang-en" data-source="the-washington-post">The Washington Post</li><li class="source-link lang-en" data-source="time">Time</li><li class="source-link lang-en" data-source="usa-today">USA Today</li><li class="source-link lang-en" data-source="vice-news">Vice News</li><li class="source-link lang-en" data-source="wired">Wired</li><li class="source-link" data-source="wired-de">Wired.de</li><li class="source-link" data-source="wirtschafts-woche">Wirtschafts Woche</li><li class="source-link" data-source="xinhua-net">Xinhua Net</li><li class="source-link" data-source="ynet">Ynet</li></ul></nav></li><!-- li.accordion-label.accordion-favoritesa.accordion-source-menu-trigger(href="#", data-source="favorites")
-  p Favorites
-  p.accordion-source-menu-arrow <i class="zmdi zmdi-chevron-right"></i>
-nav.feed-menu.favorites-menu.hide
-  ul
-    li Favorites go here--></ul></nav><div class="overlay hide"></div><!-- Main content--><main><h4 class="country-name hide"></h4><nav class="news-filter"><p class="filter filter-top-stories news-filter-active">Top Stories</p><p class="filter filter-everything">Latest</p><!-- .filter-lang.hide<p>English only</p><div class="toggle"><div class="toggle-circle">--></div></div></nav><section class="news-list"></section><!-- include partials/advertising-bottom --><section class="email-signup"><div class="signup-text"><h1>Subscribe to get regular updates about skmmr</h1></div><!-- Begin MailChimp Signup Form--><link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css"/><div id="mc_embed_signup"><form class="validate" id="mc-embedded-subscribe-form" action="https://highwayconsulting.us2.list-manage.com/subscribe/post?u=52e1397f38807108d5c2e2d2c&amp;amp;id=f71affdb23" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="novalidate"><div id="mc_embed_signup_scroll"><input class="email email-input" id="mce-EMAIL" type="email" value="" name="EMAIL" placeholder="Email Address" required="required"/><!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--><div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_52e1397f38807108d5c2e2d2c_f71affdb23" tabindex="-1" value=""/></div><div class="clear"><input class="button" id="mc-embedded-subscribe" type="submit" value="Subscribe" name="subscribe"/></div></div></form></div></section><aside class="feedback"><p class="feedback-header">Help make skmmr better</p><div class="feedback-content hide"><p class="feedback-intro">Thank you for using skmmr and providing feedback! Please take a moment to answer the questions below.</p><form action="https://formspree.io/brian.haferkamp@gmail.com" method="post"><!-- Email Subject--><input type="hidden" name="_subject" value="New feedback from skmmr.news"/><!-- CC the skmmr email address to preserve a copy--><input type="hidden" name="_cc" value="skmmrnews@gmail.com"/><!-- Honeypot - Not so fast, spammers!--><input type="text" name="_gotcha" style="display:none;"/><!-- Thank you page on submit--><input type="hidden" name="_next" value="//skmmr.news/thanks.html"/><div class="feedback-email"><p><label>Email Address *</label></p><p><input type="email" name="_replyto" id="feedback-email" required="required"/></p></div><div class="feedback-question"><p><label>What do you like most about skmmr?</label></p><p><textarea name="things-i-like" rows="5" id="like"></textarea></p></div><div class="feedback-question"><p><label>How can skmmr be improved?</label></p><p><textarea name="things-to-improve" rows="5" id="improve"></textarea></p></div><div class="feedback-submit"><input type="submit" id="feedback-submit" value="Submit Feedback"/></div></form></div></aside></main><!--footers--><footer class="site-footer"><div class="social"><p>follow skmmr</p><p><a class="social-icon" href="https://twitter.com/skmmrnews" target="_blank"><i class="zmdi zmdi-twitter"></i></a></p><p><a class="social-icon" href="https://www.facebook.com/skmmrnews/" target="_blank"><i class="zmdi zmdi-facebook-box"></i></a></p><p><a class="social-icon" href="https://github.com/brianhaferkamp/skmmr" target="_blank"><i class="zmdi zmdi-github"></i></a></p></div><div class="attribution"><span>Powered by <a href="https://newsapi.org", target="_blank">NewsAPI.org</a></span></div><a class="to-top hide" href="#top"><p><i class="zmdi zmdi-caret-up"></i></p></a></footer><!-- Loads jQuery (Delete if you're using vanilla JS)--><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><!-- Loads app-specific JS--><script src="./assets/js/app.js"></script><!-- Google Tag Manager--><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-M4QBDNH');
-</script><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4QBDNH" height="0" width="0" style="display:none;visibility:hidden;"></iframe></noscript><!-- Google Analytics--><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-114222955-2"></script><script>window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'UA-114222955-2');</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>skmmr | a light-weight international news feed, perfect for skimming</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="skmmr brings together top headlines from around the world into an easy to skim feed. Choose to read news headlines from over 100 global news sources and blogs, including The New York Times and BBC News."/>
+    <meta property="og:title" content="skmmr | a light-weight international news feed, perfect for skimming"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://skmmr.news"/>
+    <meta property="og:image" content="http://skmmr.news/assets/img/skmmr-placeholder-80.jpg"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/apple-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/apple-icon-60x60.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/apple-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/apple-icon-76x76.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/apple-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/apple-icon-120x120.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/apple-icon-144x144.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/apple-icon-152x152.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-icon-180x180.png"/>
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/android-icon-192x192.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon-96x96.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png"/>
+    <link rel="manifest" href="/assets/img/manifest.json"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <meta name="msapplication-TileImage" content="/assets/img/ms-icon-144x144.png"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <!-- Load font icons-->
+    <!-- Material Design Iconic Font - (http://zavoloklom.github.io/material-design-iconic-font/index.html)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"/>
+    <!-- Load Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700|Source+Sans+Pro:400,400i,700" rel="stylesheet"/>
+    <!-- Load the main stylesheet-->
+    <link rel="stylesheet" href="assets/css/main.css"/>
+  </head>
+  <body>
+    <div id="app">
+      <div class="masthead fixed">
+        <div class="branding"><a class="site-title" href="#top">
+            <p class="logo">s</p>
+            <h1>Skmmr</h1></a>
+          <h2 class="site-tagline">A skimmable news feed</h2>
+        </div>
+        <div class="navigation">
+          <ul>
+            <!-- lia.search-menu-trigger <i class="zmdi zmdi-search"></i>
+            -->
+            <!-- lia.source-menu-trigger.my-feed-trigger <i class="zmdi zmdi-star"></i>
+            -->
+            <li class="build-feed-trigger hide">
+              <button class="button build-feed-button">Build Feed</button>
+            </li>
+            <!-- li
+            a.refresh-page(href="/") <i class="zmdi zmdi-refresh-alt"></i>
+            
+            -->
+          </ul>
+        </div>
+      </div>
+      <!--nav.search-menu.hide
+      p.search-menu-close <i class="zmdi zmdi-close"></i>
+      ul.search-select
+        li.search-select-trigger Choose Source
+        li.search-select-option.hide(data-search-select="the-new-york-times") New York Times
+        li.search-select-option.hide(data-search-select="the-washington-post") Washington Post
+      // search box
+      input.search-input(type="text", name="search")
+      button.search-button Search
+      .search-result
+      // language
+      
+      -->
+      <!--nav.source-menu
+      p.source-menu-close <i class="zmdi zmdi-close"></i>
+      .source-theme
+        p Dark theme
+        .toggle
+          .toggle-circle
+      .source-lang
+        p English only
+        .toggle
+          .toggle-circle
+      
+      ul.accordion-menu
+        li.accordion-label.accordion-country
+          a.accordion-source-menu-trigger(href="#", data-source="country")
+            p Countries
+            p.accordion-source-menu-arrow <i class="zmdi zmdi-chevron-right"></i>
+          nav.feed-menu.country-menu.hide
+              p.menu-intro View the top headlines from each these countries
+              ul.flag-grid
+                li
+                  img.flag-image(src="assets/img/flags/ar.svg", data-country="ar", data-name="Argentina")
+                li
+                  img.flag-image(src="assets/img/flags/au.svg", data-country="au", data-name="Australia")
+                li
+                  img.flag-image(src="assets/img/flags/at.svg", data-country="at", data-name="Österreich")
+                li
+                  img.flag-image(src="assets/img/flags/be.svg", data-country="be", data-name="België")
+                li
+                  img.flag-image(src="assets/img/flags/br.svg", data-country="br", data-name="Brasil")
+                li
+                  img.flag-image(src="assets/img/flags/bg.svg", data-country="bg", data-name="България")
+                li
+                  img.flag-image(src="assets/img/flags/ca.svg", data-country="ca", data-name="Canada")
+                li
+                  img.flag-image(src="assets/img/flags/cn.svg", data-country="cn", data-name="中国")
+                li
+                  img.flag-image(src="assets/img/flags/co.svg", data-country="co", data-name="Colombia")
+                li
+                  img.flag-image(src="assets/img/flags/cu.svg", data-country="cu", data-name="Cuba")
+                li
+                  img.flag-image(src="assets/img/flags/cz.svg", data-country="cz", data-name="Česká republika")
+                li
+                  img.flag-image(src="assets/img/flags/eg.svg", data-country="eg", data-name="مصر", data-direction="reverse")
+                li
+                  img.flag-image(src="assets/img/flags/fr.svg", data-country="fr", data-name="France")
+                li
+                  img.flag-image(src="assets/img/flags/de.svg", data-country="de", data-name="Deutschland")
+                li
+                  img.flag-image(src="assets/img/flags/gr.svg", data-country="gr", data-name="Ελλάδα")
+                li
+                  img.flag-image(src="assets/img/flags/hk.svg", data-country="hk", data-name="香港")
+                li
+                  img.flag-image(src="assets/img/flags/hu.svg", data-country="hu", data-name="Magyarország")
+                li
+                  img.flag-image(src="assets/img/flags/in.svg", data-country="in", data-name="India")
+                li
+                  img.flag-image(src="assets/img/flags/id.svg", data-country="id", data-name="Indonesia")
+                li
+                  img.flag-image(src="assets/img/flags/ie.svg", data-country="ie", data-name="Ireland")
+                li
+                  img.flag-image(src="assets/img/flags/il.svg", data-country="il", data-name="ישרא", data-direction="reverse")
+                li
+                  img.flag-image(src="assets/img/flags/it.svg", data-country="it", data-name="Italia")
+                li
+                  img.flag-image(src="assets/img/flags/jp.svg", data-country="jp", data-name="日本")
+                li
+                  img.flag-image(src="assets/img/flags/lv.svg", data-country="lv", data-name="Latvija")
+                li
+                  img.flag-image(src="assets/img/flags/lt.svg", data-country="lt", data-name="Lietuva")
+                li
+                  img.flag-image(src="assets/img/flags/my.svg", data-country="my", data-name="Malaysia")
+                li
+                  img.flag-image(src="assets/img/flags/mx.svg", data-country="mx", data-name="Méjico")
+                li
+                  img.flag-image(src="assets/img/flags/ma.svg", data-country="ma", data-name="Morocco")
+                li
+                  img.flag-image(src="assets/img/flags/nl.svg", data-country="nl", data-name="Nederland")
+                li
+                  img.flag-image(src="assets/img/flags/nz.svg", data-country="nz", data-name="New Zealand")
+                li
+                  img.flag-image(src="assets/img/flags/ng.svg", data-country="ng", data-name="Nigeria")
+                li
+                  img.flag-image(src="assets/img/flags/no.svg", data-country="no", data-name="Norge")
+                li
+                  img.flag-image(src="assets/img/flags/ph.svg", data-country="ph", data-name="Phillippines")
+                li
+                  img.flag-image(src="assets/img/flags/pl.svg", data-country="pl", data-name="Polska")
+                li
+                  img.flag-image(src="assets/img/flags/pt.svg", data-country="pt", data-name="Portugal")
+                li
+                  img.flag-image(src="assets/img/flags/ro.svg", data-country="ro", data-name="România")
+                li
+                  img.flag-image(src="assets/img/flags/ru.svg", data-country="ru", data-name="Россия")
+                li
+                  img.flag-image(src="assets/img/flags/sa.svg", data-country="sa", data-name="المملكة العربية السعودية", data-direction="reverse")
+                li
+                  img.flag-image(src="assets/img/flags/rs.svg", data-country="rs", data-name="Србија")
+                li
+                  img.flag-image(src="assets/img/flags/sg.svg", data-country="sg", data-name="Singapore")
+                li
+                  img.flag-image(src="assets/img/flags/sk.svg", data-country="sk", data-name="Slovensko")
+                li
+                  img.flag-image(src="assets/img/flags/si.svg", data-country="si", data-name="Slovenija")
+                li
+                  img.flag-image(src="assets/img/flags/za.svg", data-country="za", data-name="South Africa")
+                li
+                  img.flag-image(src="assets/img/flags/kr.svg", data-country="kr", data-name="대한민국")
+                li
+                  img.flag-image(src="assets/img/flags/se.svg", data-country="se", data-name="Sverige")
+                li
+                  img.flag-image(src="assets/img/flags/ch.svg", data-country="ch", data-name="Schweiz")
+                li
+                  img.flag-image(src="assets/img/flags/tw.svg", data-country="tw", data-name="台湾")
+                li
+                  img.flag-image(src="assets/img/flags/th.svg", data-country="th", data-name="ประเทศไทย")
+                li
+                  img.flag-image(src="assets/img/flags/tr.svg", data-country="tr", data-name="Türkiye")
+                li
+                  img.flag-image(src="assets/img/flags/ae.svg", data-country="ae", data-name="الإمارات العربية المتحدة", data-direction="reverse")
+                li
+                  img.flag-image(src="assets/img/flags/ua.svg", data-country="ua", data-name="Україна")
+                li
+                  img.flag-image(src="assets/img/flags/gb.svg", data-country="gb", data-name="United Kingdom")
+                li
+                  img.flag-image(src="assets/img/flags/us.svg", data-country="us", data-name="United States")
+                li
+                  img.flag-image(src="assets/img/flags/ve.svg", data-country="ve", data-name="Venezuela")
+      
+        li.accordion-label.accordion-source
+          a.accordion-source-menu-trigger(href="#", data-source="sources")
+            p Sources
+            p.accordion-source-menu-arrow.accordion-source-menu-arrow-active <i class="zmdi zmdi-chevron-right"></i>
+          nav.feed-menu.sources-menu
+            ul
+              p.menu-intro Get the top stories or latest news from these trusted news sources
+              li.source-link
+                p.source-link-text.lang-en(data-source="abc-news") ABC News
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="abc-news-au") ABC News (AU)
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="aftenposten") Aftenposten
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="al-jezeera-english") Al-Jezeera English
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="ansa") ANSA.it
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="argaam") Argaam
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="ars-technica") Ars Technica
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="ary-news", data-direction="reverse") Ary News
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="associated-press") Associated Press
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="australian-financial-review") Australian Financial Review
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="axios") Axios
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="bbc-news") BBC News
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="bbc-sport") BBC Sport
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="bild") Bild
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="blasting-news-br") Blasting News (BR)
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="bleacher-report") Bleacher Report
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="bloomberg") Bloomberg
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="breitbart-news") Breitbart News
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="business-insider") Business Insider
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="business-insider-uk") Business Insider (UK)
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="buzzfeed") Buzzfeed
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="cbc-news") CBC News
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="cbs-news") CBS News
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="cnbc") CNBC
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="cnn") CNN
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="cnn-es") CNN Spanish
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="crypto-coins-news") Crypto Coins News
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="daily-mail") Daily Mail
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="der-tagesspiegel") Der Tagesspiegel
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="die-zeit") Die Zeit
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="el-mundo") El Mundo
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="engadget") Engadget
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="entertainment-weekly") Entertainment Weekly
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="espn") ESPN
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="espn-cric-info") ESPN Cric Info
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="financial-post") Financial Post
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="financial-times") Financial Times
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="focus") Focus
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="football-italia") Football Italia
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="fortune") Fortune
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="four-four-two") FourFourTwo
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="fox-news") Fox News
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="fox-sports") Fox Sports
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="globo") Globo
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="google-news") Google News
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="google-news-ar") Google News (Argentina)
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="google-news-au") Google News (Australia)
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="google-news-br") Google News (Brasil)
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="google-news-ca") Google News (Canada)
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="google-news-fr") Google News (France)
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="google-news-in") Google News (India)
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="google-news-is") Google News (Israel)
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="google-news-it") Google News (Italy)
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="google-news-ru") Google News (Russia)
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="google-news-sa", data-direction="reverse") Google News (Saudi Arabia)
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="google-news-uk") Google News (UK)
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="goteborgs-posten") G&ouml;	teborgs Posten
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="gruenderszene") Gruenderszene
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="hacker-news") Hacker News
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="handelsblatt") Handelsblatt
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="ign") IGN
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="il-sole-24-ore") Il Sole 24 Ore
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="independent") Independent
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="infobae") Infobae
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="info-money") Info Money
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="la-gaceta") La Gaceta
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="la-nacion") La Nacion
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="la-repubblica") La Repubblica
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="le-monde") Le Monde
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="lenta") Lenta
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="lequipe") L'equipe
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="les-ochos") Les Ochos
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="liberation") Lib&eacute;ration
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="marca") Marca
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="mashable") Mashable
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="medical-news-today") Medical News Today
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="metro") Metro
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="mirror") Mirror
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="msnbc") MSNBC
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="mtv-news") MTV News
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="mtv-news-uk") MTV News (UK)
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="national-geographic") National Geographic
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="nbc-news") NBC News
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="news-24") News 24
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="new-scientist") New Scientist
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="news-com-au") News.com.au
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="newsweek") Newsweek
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="new-york-magazine") New York Magazine
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="next-big-future") Next Big Future
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="nfl-news") NFL News
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="nhl-news") NHL News
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="nrk") NRK
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="politico") Politico
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="polygon") Polygon
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="rbc") RBC
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="recode") Recode
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="reddit-r-all") Reddit/r/all
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="reuters") Reuters
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="rt") RT
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="rte") RTE
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="rtl-nieuws") RTL Nieuws
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="sabq", data-direction="reverse") SABQ
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="spiegel-online") Spiegel Online
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="svenska-dagbladet") Svenska Dagbladet
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="t3n") T3n
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="talksport") TalkSport
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="techcrunch") TechCrunch
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="techcrunch-cn") TechCrunch (CN)
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="techradar") TechRadar
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="the-economist") The Economist
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="the-globe-and-mail") The Globe and Mail
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="the-guardian-au") The Guardian (AU)
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="the-guardian-uk") The Guardian (UK)
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="the-hill") The Hill
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="the-hindu") The Hindu
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="the-huffington-post") The Huffington Post
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="the-irish-times") The Irish Times
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="the-lad-bible") The Lad Bible
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="the-new-york-times") The New York Times
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="the-next-web") The Next Web
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="the-sport-bible") The Sport Bible
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="the-telegraph") The Telegraph
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="the-times-of-india") The Times of India
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="the-verge") The Verge
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="the-wall-street-journal") The Wall Street Journal
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="the-washington-post") The Washington Post
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="time") Time
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="usa-today") USA Today
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="vice-news") Vice News
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text.lang-en(data-source="wired") Wired
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="wired-de") Wired.de
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="wirtschafts-woche") Wirtschafts Woche
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="xinhua-net") Xinhua Net
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+              li.source-link
+                p.source-link-text(data-source="ynet") Ynet
+                //.source-link-favorite-wrapper
+                  p.source-link-favorite <i class="zmdi zmdi-star-outline"></i>
+                  p.source-link-favorite-active.hide <i class="zmdi zmdi-star"></i>
+      
+        //li.accordion-label.accordion-favorites
+          a.accordion-source-menu-trigger(href="#", data-source="favorites")
+            p Favorites
+            p.accordion-source-menu-arrow <i class="zmdi zmdi-chevron-right"></i>
+          nav.feed-menu.favorites-menu.hide
+      -->
+      <nav class="navbar">
+        <div class="navbar-inner">
+          <ul class="navbar-menu">
+            <li class="navbar-item" data-item="search"><i class="zmdi zmdi-search"></i><span>Search</span></li>
+            <li class="navbar-item" data-item="sources"><i class="zmdi zmdi-view-list-alt"></i><span>Sources</span></li>
+            <!-- li.navbar-item.my-feed-trigger(data-item="my-feed") <i class="zmdi zmdi-star"></i>span My Feed
+            -->
+            <li class="navbar-item" data-item="settings"><i class="zmdi zmdi-settings"></i><span>Settings</span></li>
+          </ul>
+        </div>
+      </nav>
+      <section class="navbar-view hide">
+        <div class="navbar-view-inner">
+          <p class="navbar-view-close"><i class="zmdi zmdi-close"></i></p>
+          <section class="view search-view hide">
+            <header class="search-view-header">
+              <h2>Search</h2>
+              <p>Search for news, people, and events across more than 30,000 websites and blogs.</p>
+            </header>
+            <section id="search-box">
+              <div class="search-box-inner">
+                <div class="search-basic">
+                  <input class="search-basic-input" type="search" name="search-main" placeholder="Search the Web"/>
+                  <input class="search-basic-submit" type="submit" name="search-main-submit" value="Search"/>
+                </div>
+                <!--.advanced-search-wrapper
+                .advanced-search-toggle
+                  button.button-advanced-search Advanced Search <i class="zmdi zmdi-chevron-down"></i>
+                .search-advanced.hide
+                  .search-advanced-group
+                    h2 By Date
+                    input.time-from(type="date", value="")
+                    input.time-to(type="date", value="")
+                  .flex-group
+                    .search-advanced-group
+                      h2 Language
+                      select.lang-select
+                        option Choose language
+                        option(value="") All
+                        option(value="en") English
+                        option(value="es") Spanish
+                        option(value="ar") Arabic
+                        option(value="zh") Chinese
+                        option(value="de") German
+                        option(value="fr") French
+                        option(value="he") Hebrew
+                        option(value="it") Italian
+                        option(value="nl") Dutch
+                        option(value="no") Norwegian
+                        option(value="sv") Swedish
+                        option(value="ru") Russian
+                
+                    .search-advanced-group
+                      h2 Sort by
+                      select.sort-select
+                        option(value="publishedAt") Most Recent
+                        option(value="relevancy") Most Relevant
+                        option(value="popularity") Most Popular
+                
+                  .search-advanced-group
+                    h2 Limit search to
+                    input.search-site-limit(type="text", name="site-limit", placeholder="Include domain (ex., .com). Separate with comma")
+                
+                  .search-advanced-group
+                    h2 Popular sources
+                    ul.popular-sources
+                      li
+                        input.popular-sources-item(type="checkbox", name="the-new-york-times", data-label="the-new-york-times")
+                        label(for="the-new-york-times") NY Times
+                      li
+                        input.popular-sources-item(type="checkbox", name="bbc-news", data-label="bbc-news")
+                        label(for="bbc-news") BBC News
+                      li
+                        input.popular-sources-item(type="checkbox", name="mashable", data-label="mashable")
+                        label(for="mashable") Mashable
+                      li
+                        input.popular-sources-item(type="checkbox", name="reuters", data-label="reuters")
+                        label(for="reuters") Reuters
+                      li
+                        input.popular-sources-item(type="checkbox", name="techcrunch", data-label="techcrunch")
+                        label(for="techcrunch") TechCrunch
+                      li
+                          input.popular-sources-item(type="checkbox", name="the-huffington-post", data-label="the-huffington-post")
+                          label(for="the-huffington-post") Huffington Post
+                      li
+                          input.popular-sources-item(type="checkbox", name="the-washington-times", data-label="the-washington-times")
+                          label(for="the-washington-times") The Washington Times
+                      li
+                          input.popular-sources-item(type="checkbox", name="the-wall-street-journal", data-label="the-wall-street-journal")
+                          label(for="the-wall-street-journal") The Wall Street Journal
+                
+                -->
+              </div>
+            </section>
+            <p class="advanced-search-text">Advanced search operators are supported. <a href="#" class="search-learn-more">Learn More</a></p>
+            <ul class="advanced-search-info hide">
+              <li>Surround phrases with quotes (") for exact match.</li>
+              <li>Prepend words or phrases that <em>must</em> appear with a + symbol. Eg: +bitcoin</li>
+              <li>Prepend words that <em>must not</em> appear with a - symbol. Eg: -bitcoin</li>
+              <li>Alternatively you can use the AND / OR / NOT keywords, and optionally group these with parenthesis. Eg: crypto AND (ethereum OR litecoin) NOT bitcoin.</li>
+            </ul>
+          </section>
+          <section class="view sources-view hide">
+            <header class="sources-view-header">
+              <h2>Sources</h2>
+            </header>
+            <main class="sources-list">
+              <nav>
+                <ul class="feed-menu sources-menu">
+                  <p class="menu-intro">Click a source name to read the latest news from that source. Click the star to add the source to your personal feed.</p>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="abc-news">ABC News</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="abc-news-au">ABC News (AU)</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="aftenposten">Aftenposten</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="al-jazeera-english">Al-Jazeera English</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="ansa">ANSA.it</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="argaam" data-direction="rtl">Argaam</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="ars-technica">Ars Technica</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="ary-news" data-direction="reverse">Ary News</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="associated-press">Associated Press</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="australian-financial-review">Australian Financial Review</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="axios">Axios</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="bbc-news">BBC News</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="bbc-sport">BBC Sport</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="bild">Bild</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="blasting-news-br">Blasting News (BR)</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="bleacher-report">Bleacher Report</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="bloomberg">Bloomberg</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="breitbart-news">Breitbart News</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="business-insider">Business Insider</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="business-insider-uk">Business Insider (UK)</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="buzzfeed">Buzzfeed</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="cbc-news">CBC News</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="cbs-news">CBS News</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="cnbc">CNBC</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="cnn">CNN</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="cnn-es">CNN Spanish</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="crypto-coins-news">Crypto Coins News</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="daily-mail">Daily Mail</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="der-tagesspiegel">Der Tagesspiegel</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="die-zeit">Die Zeit</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="el-mundo">El Mundo</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="engadget">Engadget</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="entertainment-weekly">Entertainment Weekly</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="espn">ESPN</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="espn-cric-info">ESPN Cric Info</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="financial-post">Financial Post</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="financial-times">Financial Times</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="focus">Focus</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="football-italia">Football Italia</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="fortune">Fortune</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="four-four-two">FourFourTwo</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="fox-news">Fox News</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="fox-sports">Fox Sports</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="globo">Globo</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="google-news">Google News</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="google-news-ar">Google News (Argentina)</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="google-news-au">Google News (Australia)</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="google-news-br">Google News (Brasil)</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="google-news-ca">Google News (Canada)</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="google-news-fr">Google News (France)</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="google-news-in">Google News (India)</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="google-news-is">Google News (Israel)</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="google-news-it">Google News (Italy)</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="google-news-ru">Google News (Russia)</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="google-news-sa" data-direction="reverse">Google News (Saudi Arabia)</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="google-news-uk">Google News (UK)</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="goteborgs-posten">G&ouml;	teborgs Posten</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="gruenderszene">Gruenderszene</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="hacker-news">Hacker News</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="handelsblatt">Handelsblatt</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="ign">IGN</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="il-sole-24-ore">Il Sole 24 Ore</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="independent">Independent</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="infobae">Infobae</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="info-money">Info Money</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="la-gaceta">La Gaceta</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="la-nacion">La Nacion</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="la-repubblica">La Repubblica</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="le-monde">Le Monde</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="lenta">Lenta</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="lequipe">L'equipe</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="les-ochos">Les Ochos</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="liberation">Lib&eacute;ration</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="marca">Marca</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="mashable">Mashable</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="medical-news-today">Medical News Today</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="metro">Metro</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="mirror">Mirror</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="msnbc">MSNBC</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="mtv-news">MTV News</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="mtv-news-uk">MTV News (UK)</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="national-geographic">National Geographic</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="nbc-news">NBC News</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="news-24">News 24</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="new-scientist">New Scientist</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="news-com-au">News.com.au</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="newsweek">Newsweek</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="new-york-magazine">New York Magazine</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="next-big-future">Next Big Future</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="nfl-news">NFL News</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="nhl-news">NHL News</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="nrk">NRK</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="politico">Politico</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="polygon">Polygon</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="rbc">RBC</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="recode">Recode</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="reddit-r-all">Reddit/r/all</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="reuters">Reuters</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="rt">RT</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="rte">RTE</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="rtl-nieuws">RTL Nieuws</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="sabq" data-direction="reverse">SABQ</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="spiegel-online">Spiegel Online</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="svenska-dagbladet">Svenska Dagbladet</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="t3n">T3n</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="talksport">TalkSport</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="techcrunch">TechCrunch</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="techcrunch-cn">TechCrunch (CN)</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="techradar">TechRadar</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="the-economist">The Economist</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="the-globe-and-mail">The Globe and Mail</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="the-guardian-au">The Guardian (AU)</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="the-guardian-uk">The Guardian (UK)</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="the-hill">The Hill</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="the-hindu">The Hindu</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="the-huffington-post">The Huffington Post</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="the-irish-times">The Irish Times</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="the-lad-bible">The Lad Bible</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="the-new-york-times">The New York Times</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="the-next-web">The Next Web</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="the-sport-bible">The Sport Bible</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="the-telegraph">The Telegraph</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="the-times-of-india">The Times of India</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="the-verge">The Verge</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="the-wall-street-journal">The Wall Street Journal</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="the-washington-post">The Washington Post</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="time">Time</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="usa-today">USA Today</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="vice-news">Vice News</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text lang-en" data-source="wired">Wired</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="wired-de">Wired.de</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="wirtschafts-woche">Wirtschafts Woche</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="xinhua-net">Xinhua Net</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                  <li class="source-link">
+                    <p class="source-link-text" data-source="ynet">Ynet</p>
+                    <div class="source-link-favorite-wrapper">
+                      <p class="source-link-favorite"><i class="zmdi zmdi-star-outline"></i></p>
+                      <p class="source-link-favorite-active hide"><i class="zmdi zmdi-star"></i></p>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </main>
+          </section>
+          <!-- section.view.my-feed-view.hide
+          header.my-feed-view-header
+            h2 My Feed
+          p Manage your sources feed.
+          ul.my-feed-list
+            li.my-feed-item
+          -->
+          <section class="view settings-view hide">
+            <header class="settings-view-header">
+              <h2>Settings</h2>
+            </header>
+            <div class="settings">
+              <div class="settings-group settings-font">
+                <p class="settings-label">Font</p>
+                <ul class="font-styles">
+                  <li class="font-style-choice font-serif font-style-active">Serif</li>
+                  <li class="font-style-choice font-sans-serif">Sans Serif</li>
+                </ul>
+              </div>
+              <div class="settings-group settings-font-size">
+                <p class="settings-label">Font-Size</p>
+                <ul class="font-size">
+                  <li class="font-size-choice font-size-xl">XL</li>
+                  <li class="font-size-choice font-size-l">L</li>
+                  <li class="font-size-choice font-size-m font-size-active">M</li>
+                </ul>
+              </div>
+              <!-- .settings-group.settings-theme
+              p.settings-label Dark theme
+              .toggle
+                .toggle-circle
+              -->
+            </div>
+          </section>
+        </div>
+      </section>
+      <main>
+        <div class="page-header">
+          <h4 class="country-name hide"></h4>
+          <nav class="news-filter">
+            <p class="filter filter-top-stories news-filter-active">Top Stories</p>
+            <p class="filter filter-everything">Latest</p>
+          </nav>
+          <header class="news-search-header"></header>
+        </div>
+        <section class="news-list">
+          <p class="loader"><i class="zmdi zmdi-spinner zmdi-hc-spin"></i></p>
+        </section>
+      </main><!-- include partials/email-signup -->
+<!-- include partials/user-feedback -->
+      <footer class="site-footer hide">
+        <div class="social">
+          <p>follow skmmr</p>
+          <p><a class="social-icon" href="https://twitter.com/skmmrnews" target="_blank"><i class="zmdi zmdi-twitter"></i></a></p>
+          <p><a class="social-icon" href="https://www.facebook.com/skmmrnews/" target="_blank"><i class="zmdi zmdi-facebook-box"></i></a></p>
+          <p><a class="social-icon" href="https://github.com/brianhaferkamp/skmmr" target="_blank"><i class="zmdi zmdi-github"></i></a></p>
+        </div>
+        <div class="attribution"><span>Powered by <a href="https://newsapi.org", target="_blank">NewsAPI.org</a></span></div>
+        <!--a.to-top.hide(href="#top")
+        p <i class="zmdi zmdi-caret-up"></i>
+        
+        -->
+      </footer>
+      <!-- Loads jQuery (Delete if you're using vanilla JS)-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <!-- Loads app-specific JS-->
+      <script src="./assets/js/app.js"></script>
+      <!-- Google Tag Manager-->
+      <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-M4QBDNH');
+        
+      </script>
+      <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4QBDNH" height="0" width="0" style="display:none;visibility:hidden;"></iframe>
+      </noscript>
+      <!-- Google Analytics-->
+      <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-114222955-2"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'UA-114222955-2');
+      </script>
+    </div>
+  </body>
+</html>
