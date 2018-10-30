@@ -1,6 +1,3 @@
-// manifest for skmmr.news
-// controls how the app is loaded from the user
-
 {
   "short_name": "skmmr",
   "name": "skmmr news app",
