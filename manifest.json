@@ -6,12 +6,12 @@
   "name": "skmmr news app",
   "icons": [
     {
-      "src": "/assets/img/android-icon-192x192",
+      "src": "/assets/img/android-icon-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/assets/img/ms-icon-310x310",
+      "src": "/assets/img/ms-icon-310x310.png",
       "type": "image/png",
       "sizes": "512x512"
     }
