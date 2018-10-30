@@ -1,0 +1,24 @@
+// manifest for skmmr.news
+// controls how the app is loaded from the user
+
+{
+  "short_name": "skmmr",
+  "name": "skmmr news app",
+  "icons": [
+    {
+      "src": "/assets/img/android-icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/img/ms-icon-310x310.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#BA7609",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#222222"
+}
