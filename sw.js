@@ -21,7 +21,7 @@ self.addEventListener('install', function(event) {
 
 self.addEventListener('activate', event => {
   // delete any caches that aren't in expectedCaches
-  // which will get rid of static-v1
+  // which will get rid of previous versions
   event.waitUntil(
     caches.keys().then(keys => Promise.all(
       keys.map(key => {
@@ -40,7 +40,8 @@ self.addEventListener('fetch', function(event) {
 
   event.respondWith(
    caches.match(event.request).then(function(response) {
-     return response || fetch(event.request);
+     // return response || fetch(event.request);
+     return response;
    })
    );
 });
