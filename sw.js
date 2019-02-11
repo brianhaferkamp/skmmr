@@ -1,4 +1,5 @@
 // Service Worker code
+// version 2.0.2
 
 importScripts('service-worker-cache-polyfill.js');
 
