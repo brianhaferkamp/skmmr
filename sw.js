@@ -3,10 +3,12 @@
 
 importScripts('service-worker-cache-polyfill.js');
 
+var cacheName = 'Version 2.0.2';
+
 // example usage:
 self.addEventListener('install', function(event) {
   event.waitUntil(
-    caches.open('skmmr').then(function(cache) {
+    caches.open(cacheName).then(function(cache) {
      return cache.addAll([
        '/',
        '/index.html',
