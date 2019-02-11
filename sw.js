@@ -8,9 +8,9 @@ self.addEventListener('install', function(event) {
     caches.open('skmmr').then(function(cache) {
      return cache.addAll([
        '/',
-       '/index.html'
-       // '/assets/css/main.css',
-       // '/assets/js/app.js'
+       '/index.html',
+       '/assets/css/main.css',
+       '/assets/js/app.js'
      ]);
    })
   );
