@@ -3,7 +3,7 @@
 
 importScripts('service-worker-cache-polyfill.js');
 
-const cacheName = 'version-2.4';
+const cacheName = 'version-2.4.1';
 
 // example usage:
 self.addEventListener('install', function(event) {
