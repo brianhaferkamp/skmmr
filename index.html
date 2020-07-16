@@ -1,22 +1,137 @@
-<!DOCTYPE html><html lang="en"><head><title>skmmr | a light-weight international news feed, perfect for skimming</title><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content="skmmr brings together top headlines from around the world into an easy to skim feed. Choose to read news headlines from over 100 global news sources and blogs, including The New York Times and BBC News."/><meta property="og:title" content="skmmr | a light-weight international news feed, perfect for skimming"/><meta property="og:type" content="website"/><meta property="og:url" content="http://skmmr.news"/><meta property="og:image" content="http://skmmr.news/assets/img/skmmr-placeholder-80.jpg"/><link rel="apple-touch-icon" sizes="57x57" href="/assets/img/apple-icon-57x57.png"/><link rel="apple-touch-icon" sizes="60x60" href="/assets/img/apple-icon-60x60.png"/><link rel="apple-touch-icon" sizes="72x72" href="/assets/img/apple-icon-72x72.png"/><link rel="apple-touch-icon" sizes="76x76" href="/assets/img/apple-icon-76x76.png"/><link rel="apple-touch-icon" sizes="114x114" href="/assets/img/apple-icon-114x114.png"/><link rel="apple-touch-icon" sizes="120x120" href="/assets/img/apple-icon-120x120.png"/><link rel="apple-touch-icon" sizes="144x144" href="/assets/img/apple-icon-144x144.png"/><link rel="apple-touch-icon" sizes="152x152" href="/assets/img/apple-icon-152x152.png"/><link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-icon-180x180.png"/><link rel="icon" type="image/png" sizes="192x192" href="/assets/img/android-icon-192x192.png"/><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon-96x96.png"/><link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png"/><link rel="manifest" href="/manifest.json"/><meta name="msapplication-TileColor" content="#ffffff"/><meta name="msapplication-TileImage" content="/assets/img/ms-icon-144x144.png"/><meta name="theme-color" content="#ffffff"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"/><link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700|Source+Sans+Pro:400,400i,700" rel="stylesheet"/><link rel="stylesheet" href="assets/css/main.css"/></head><body><div id="app"><article class="patreon-appeal"><div class="patreon-appeal-inner"><h1>skmmr users:</h1><p>Last month our data provider changed our free access to paid access. It was quite unexpected so we've been trying to find a good solution to keep the app running. The app still works we just need to pay for the data that comes in.</p><p>After looking at other alternatives to get data we haven't found a better solution than the one we were using. And rather than throw ads all over the app to try and fund it we thought we would hand it over to our user community to help keep the app functioning. Our hope is that the app is unique and valuable enough to keep alive. If just 100 users give $5 a month the app can continue functioning normally.</p><p>It feels like a lot to ask, but this has always been a project centered around our users. Allowing the users to be part of the app's life seems right. When you become a patron you'll have even more say on new features and making the app better.</p><div class="support-button"><a class="button" href="https://www.patreon.com/skmmr" target="_blank">Support skmmr on Patreon</a></div></div></article><footer class="site-footer hide"><div class="social"><p>follow skmmr</p><p><a class="social-icon" href="https://twitter.com/skmmrnews" target="_blank"><i class="zmdi zmdi-twitter"></i></a></p><p><a class="social-icon" href="https://www.facebook.com/skmmrnews/" target="_blank"><i class="zmdi zmdi-facebook-box"></i></a></p><p><a class="social-icon" href="https://github.com/brianhaferkamp/skmmr" target="_blank"><i class="zmdi zmdi-github"></i></a></p></div><div class="attribution"><span>Powered by <a href="https://newsapi.org", target="_blank">NewsAPI.org</a></span></div></footer><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script src="assets/js/app.js"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-M4QBDNH');
-</script><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4QBDNH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-114222955-2"></script><script>window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - skmmr v3 // Currents API</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700|Open+Sans:ital,wght@0,400;0,700;1,400;1,700">
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'><link rel="stylesheet" href="./style.css">
 
-gtag('config', 'UA-114222955-2');
-</script><script>window.twttr = (function(d, s, id) {
-var js, fjs = d.getElementsByTagName(s)[0],
-  t = window.twttr || {};
-if (d.getElementById(id)) return t;
-js = d.createElement(s);
-js.id = id;
-js.src = "https://platform.twitter.com/widgets.js";
-fjs.parentNode.insertBefore(js, fjs);
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="app">
+  <header class="masthead"></header>
+  <main>
+    <header class="category-header">
+      <h1>Latest News</h1>
+    </header>
+    <section class="feed magazine"></section>
+  </main>
+  <footer class="footer">
+    <nav class="main-nav">
+      <ul class="nav-links">
+        <li class="nav-link logo"><span>s</span></li>
+        <!--li.nav-link.languages-link <i class="zmdi zmdi-translate zmdi-hc-fw"></i>-->
+        <li class="nav-link categories-link"><i class="zmdi zmdi-view-list-alt zmdi-hc-fw"></i></li>
+        <li class="nav-link settings-link"><i class="zmdi zmdi-settings zmdi-hc-fw"></i></li>
+      </ul>
+    </nav>
+  </footer>
+  <aside class="panel categories">
+    <p class="panel-close"><i class="zmdi zmdi-close-circle-o zmdi-hc-fw"></i></p>
+    <header class="panel-header">
+      <h2>Choose Category</h2>
+    </header>
+    <article>
+      <ul class="panel-list categories-list">
+        <li data-category="latest"><span>Latest News</span> <i class="zmdi zmdi-chevron-right zmdi-hc-fw"></i></a></li>
+        <li data-category="general"><span>General</span> <i class="zmdi zmdi-chevron-right zmdi-hc-fw"></i></a></li>
+        <li data-category="world"><span>World</span> <i class="zmdi zmdi-chevron-right zmdi-hc-fw"></i></a></li>
+        <li data-category="politics"><span>Politics</span> <i class="zmdi zmdi-chevron-right zmdi-hc-fw"></i></a></li>
+        <li data-category="technology"><span>Technology</span> <i class="zmdi zmdi-chevron-right zmdi-hc-fw"></i></a></li>
+        <li data-category="business"><span>Business</span> <i class="zmdi zmdi-chevron-right zmdi-hc-fw"></i></a></li>
+        <li data-category="finance"><span>Finance</span> <i class="zmdi zmdi-chevron-right zmdi-hc-fw"></i></a></li>
+        <li data-category="sports"><span>Sports</span> <i class="zmdi zmdi-chevron-right zmdi-hc-fw"></i></a></li>
+        <li data-category="entertainment"><span>Entertainment</span> <i class="zmdi zmdi-chevron-right zmdi-hc-fw"></i></a></li>
+        <li data-category="lifestyle"><span>Lifestyle</span> <i class="zmdi zmdi-chevron-right zmdi-hc-fw"></i></a></li>
+        <li data-category="science"><span>Science</span> <i class="zmdi zmdi-chevron-right zmdi-hc-fw"></i></a></li>
+        <li data-category="health"><span>Health</span> <i class="zmdi zmdi-chevron-right zmdi-hc-fw"></i></a></li>
+      </ul>
+    </article>
+  </aside>
+  <aside class="panel languages">
+    <p class="panel-close"><i class="zmdi zmdi-close-circle-o zmdi-hc-fw"></i></p>
+    <header class="panel-header">
+      <h2>Choose Language</h2>
+    </header>
+    <article>
+      <ul class="panel-list languages-list">
+        <li data-lang="en"><span>English</span> <i class="zmdi zmdi-chevron-right zmdi-hc-fw"></i></a></li>
+        <li data-lang="ar"><span>Arabic</span> <i class="zmdi zmdi-chevron-right zmdi-hc-fw"></i></a></li>
+        <li data-lang="zh"><span>Chinese</span> <i class="zmdi zmdi-chevron-right zmdi-hc-fw"></i></a></li>
+        <li data-lang="nl"><span>Dutch</span> <i class="zmdi zmdi-chevron-right zmdi-hc-fw"></i></a></li>
+        <li data-lang="fi"><span>Finnish</span> <i class="zmdi zmdi-chevron-right zmdi-hc-fw"></i></a></li>
+        <li data-lang="fr"><span>French</span> <i class="zmdi zmdi-chevron-right zmdi-hc-fw"></i></a></li>
+        <li data-lang="de"><span>German</span> <i class="zmdi zmdi-chevron-right zmdi-hc-fw"></i></a></li>
+        <li data-lang="hi"><span>Hindi</span> <i class="zmdi zmdi-chevron-right zmdi-hc-fw"></i></a></li>
+        <li data-lang="it"><span>Italian</span> <i class="zmdi zmdi-chevron-right zmdi-hc-fw"></i></a></li>
+        <li data-lang="ja"><span>Japanese</span> <i class="zmdi zmdi-chevron-right zmdi-hc-fw"></i></a></li>
+        <li data-lang="ko"><span>Korean</span> <i class="zmdi zmdi-chevron-right zmdi-hc-fw"></i></a></li>
+        <li data-lang="msa"><span>Malay</span> <i class="zmdi zmdi-chevron-right zmdi-hc-fw"></i></a></li>
+        <li data-lang="pt"><span>Portuguese</span> <i class="zmdi zmdi-chevron-right zmdi-hc-fw"></i></a></li>
+        <li data-lang="ru"><span>Russian</span> <i class="zmdi zmdi-chevron-right zmdi-hc-fw"></i></a></li>
+        <li data-lang="es"><span>Spanish</span> <i class="zmdi zmdi-chevron-right zmdi-hc-fw"></i></a></li>
+      </ul>
+    </article>
+  </aside>
+  <aside class="panel settings">
+    <p class="panel-close"><i class="zmdi zmdi-close-circle-o zmdi-hc-fw"></i></p>
+    <header class="panel-header">
+      <h2>Settings</h2>
+    </header>
+    <article>
+      <ul>
+        <li class="settings-group layout-group">
+          <div class="settings-label">Layout</div>
+          <div class="settings-select">
+            <select class="layout-select">
+              <option value="magazine">Magazine</option>
+              <option value="list">List</option>
+              <option value="titles">Titles</option>
+            </select>
+          </div>
+        </li>
+        <li class="settings-group font-style-group">
+          <div class="settings-label">Font Style</div>
+          <div class="settings-select">
+            <select class="font-style-select">
+              <option value="serif">Serif</option>
+              <option value="sans">Sans Serif</option>
+            </select>
+          </div>
+        </li>
+        <li class="settings-group font-size-group">
+          <div class="settings-label">Font Size</div>
+          <ul class="settings-list font-size-list">
+            <li data-fsize="sm">S</li>
+            <li class="active" data-fsize="md">M</li>
+            <li data-fsize="lg">L</li>
+            <li data-fsize="xl">XL</li>
+          </ul>
+        </li>
+        <li class="settings-group reading-mode-group">
+          <div class="settings-label">Reading Mode</div>
+          <ul class="settings-list reading-mode-list">
+            <li class="active" data-mode="light">Light</li>
+            <li data-mode="dark">Dark</li>
+          </ul>
+        </li>
+        <li class="settings-group theme-color-group">
+          <div class="settings-label">Theme Color</div>
+          <ul class="settings-list theme-color-list">
+            <li class="default active" data-theme="default"></li>
+            <li class="orange" data-theme="orange"></li>
+            <li class="blue" data-theme="blue"></li>
+            <li class="green" data-theme="green"></li>
+          </ul>
+        </li>
+      </ul>
+    </article>
+  </aside>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="./script.js"></script>
 
-t._e = [];
-t.ready = function(f) {
-  t._e.push(f);
-};
-
-return t;
-}(document, "script", "twitter-wjs"));</script></div></body></html>
+</body>
+</html>
