@@ -186,12 +186,11 @@ $('.categories-link').on('click', function() {
 $('.categories-list li').on('click', function() {
   var $this = $(this);
   category = $this.attr('data-category');
+  $('.category-header h1').text(category);
   
   if (category == 'latest') {
     category = 'general,technology,lifestyle,business,science,entertainment,sports,finance,politics,health';
     $('.category-header h1').text('Latest News');
-  } else {    
-    $('.category-header h1').text(category);
   }
   
   localStorage.setItem('skmmr-category', category);
