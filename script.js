@@ -1,13 +1,3 @@
-// Register service worker
-// version 2.0.2
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker
-   .register('sw.js')
-   .then(function() {
-     console.log("Service Worker Registered");
-   });
-}
-
 //----------------------------------------------------------
 // Global Variables
 //----------------------------------------------------------
@@ -35,12 +25,11 @@ if (localStorage.getItem('skmmr-category')) {
   category = localStorage.getItem('skmmr-category');
   
   if (category == 'latest') {
-    category = 'general,technology,lifestyle,business,science,entertainment,sports,finance,politics,health';
     $('.category-header h1').text('Latest News');
   } else {
-    category = localStorage.getItem('skmmr-category');
     $('.category-header h1').text(category);
-  } 
+  }
+  
 }
 
 // set layout
@@ -186,11 +175,12 @@ $('.categories-link').on('click', function() {
 $('.categories-list li').on('click', function() {
   var $this = $(this);
   category = $this.attr('data-category');
-  $('.category-header h1').text(category);
   
   if (category == 'latest') {
     category = 'general,technology,lifestyle,business,science,entertainment,sports,finance,politics,health';
     $('.category-header h1').text('Latest News');
+  } else {    
+    $('.category-header h1').text(category);
   }
   
   localStorage.setItem('skmmr-category', category);
