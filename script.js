@@ -8,6 +8,7 @@ if ('serviceWorker' in navigator) {
    });
 }
 
+
 //----------------------------------------------------------
 // Global Variables
 //----------------------------------------------------------
@@ -188,12 +189,15 @@ $('.categories-list li').on('click', function() {
   
   if (category == 'latest') {
     category = 'general,technology,lifestyle,business,science,entertainment,sports,finance,politics,health';
-    $('.category-header h1').text('Latest News');
+    $('.category-header h1').text('Latest News');    
+    // set the storage item to 'latest', not the var category
+    localStorage.setItem('skmmr-category', 'latest');
   } else {    
     $('.category-header h1').text(category);
+    localStorage.setItem('skmmr-category', category);
   }
   
-  localStorage.setItem('skmmr-category', category);
+  // localStorage.setItem('skmmr-category', category);
   // console.log(category);
   $('.feed').html('');
   pageNumber = '1';
