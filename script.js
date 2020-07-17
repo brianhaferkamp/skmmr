@@ -1,3 +1,13 @@
+// Register service worker
+// version 2.0.2
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker
+   .register('sw.js')
+   .then(function() {
+     console.log("Service Worker Registered");
+   });
+}
+
 //----------------------------------------------------------
 // Global Variables
 //----------------------------------------------------------
